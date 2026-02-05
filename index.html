@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatin Vanjani - 16 year old Programmer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Trail Effect -->
+    <div id="cursor-trail"></div>
+
+    <!-- Main Container -->
+    <div class="cyber-container">
+        
+        <!-- Animated Background Grid -->
+        <div class="grid-background">
+            <div class="grid-lines"></div>
+            <div class="scanline"></div>
+        </div>
+
+        <!-- Profile Header -->
+        <header class="profile-header">
+            <div class="player-badge">
+                <div class="badge-glow"></div>
+                <h1 class="player-name" id="playerName">Yatin Vanjani</h1>
+                <div class="player-tag">Programmer</div>
+            </div>
+            
+            <div class="avatar-container">
+                <div class="avatar-frame">
+                    <div class="avatar-glow"></div>
+                    <img src="avatar.jpg" alt="Yatin Vanjani" class="player-avatar" onerror="this.style.display='none'; this.parentNode.style.backgroundColor='#000'; this.parentNode.style.border='4px solid var(--neon-blue)';">
+                </div>
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span class="status-text">AVAILABLE</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="profile-main">
+            
+            <!-- Code Terminal Section -->
+            <section class="code-terminal-section">
+                <h2 class="section-title">LIVE CODING SESSION</h2>
+                <div class="code-terminal">
+                    <div id="code-output">
+                        <span class="cursor-blink"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Dashboard -->
+            <section class="stats-dashboard">
+                <h2 class="section-title">DEVELOPER STATS</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-card" data-stat="experience">
+                        <div class="stat-icon">💻</div>
+                        <div class="stat-label">YEARS EXPERIENCE</div>
+                        <div class="stat-value" id="levelValue">3+</div>
+                        <div class="stat-bar">
+                            <div class="bar-fill" id="levelBar"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card" data-stat="languages">
+                        <div class="stat-icon">🌐</div>
+                        <div class="stat-label">LANGUAGES</div>
+                        <div class="stat-value" id="kdrValue">9</div>
+                        <div class="stat-bar">
+                            <div class="bar-fill" id="kdrBar"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card" data-stat="projects">
+                        <div class="stat-icon">🚀</div>
+                        <div class="stat-label">PROJECTS</div>
+                        <div class="stat-value" id="winsValue">50+</div>
+                        <div class="stat-bar">
+                            <div class="bar-fill" id="winsBar"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card" data-stat="clients">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-label">CLIENTS</div>
+                        <div class="stat-value" id="hoursValue">3</div>
+                        <div class="stat-bar">
+                            <div class="bar-fill" id="hoursBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills & Abilities -->
+            <section class="skills-section">
+                <h2 class="section-title">TECHNICAL SKILLS</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JAVASCRIPT</span>
+                            <span class="skill-percent" id="reflexPercent">100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" id="reflexFill"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">REACT</span>
+                            <span class="skill-percent" id="strategyPercent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" id="strategyFill"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">NODE.JS</span>
+                            <span class="skill-percent" id="teamworkPercent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" id="teamworkFill"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PYTHON</span>
+                            <span class="skill-percent" id="aimPercent">100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" id="aimFill"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">AWS</span>
+                            <span class="skill-percent" id="awsPercent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" id="awsFill"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percent" id="dockerPercent">100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" id="dockerFill"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="games-section">
+                <h2 class="section-title">RECENT PROJECTS</h2>
+                
+                <div class="games-grid">
+                    <a href="https://github.com/yvtinnn/Cybersecurity-Toolkit" target="_blank" rel="noopener noreferrer" class="game-card project-card" data-game="cybersecurity">
+                        <div class="game-icon">🔒</div>
+                        <div class="game-title">CYBERSECURITY TOOLKIT</div>
+                        <div class="game-stats">Python • Security • Automation</div>
+                        <div class="game-overlay"></div>
+                    </a>
+
+                    <a href="https://github.com/yvtinnn/data-scraper" target="_blank" rel="noopener noreferrer" class="game-card project-card" data-game="scraper">
+                        <div class="game-icon">🕷️</div>
+                        <div class="game-title">DATA SCRAPER</div>
+                        <div class="game-stats">Python • Web Scraping • Data Analysis</div>
+                        <div class="game-overlay"></div>
+                    </a>
+                </div>
+            </section>
+
+           
+                
+
+                    
+
+            <!-- Services Section -->
+            <section class="services-section">
+                <h2 class="section-title">SERVICES</h2>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <div class="service-title">Web Development</div>
+                        <div class="service-desc">Custom websites and web applications with modern frameworks</div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <div class="service-title">Mobile Apps</div>
+                        <div class="service-desc">Can make mobile applications</div>
+                    </div>
+
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🤖</div>
+                        <div class="service-title">AI & ML</div>
+                        <div class="service-desc">Machine learning models and AI integrations</div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Skills Matrix -->
+            <section class="skills-matrix-section">
+                <h2 class="section-title">SKILLS MATRIX</h2>
+                
+                <div class="skills-matrix">
+                    <div class="matrix-row">
+                        <div class="matrix-label">Frontend</div>
+                        <div class="matrix-bar">
+                            <div class="matrix-fill" style="width: 95%"></div>
+                        </div>
+                        <div class="matrix-value">95%</div>
+                    </div>
+                    <div class="matrix-row">
+                        <div class="matrix-label">Backend</div>
+                        <div class="matrix-bar">
+                            <div class="matrix-fill" style="width: 92%"></div>
+                        </div>
+                        <div class="matrix-value">92%</div>
+                    </div>
+                    <div class="matrix-row">
+                        <div class="matrix-label">Database</div>
+                        <div class="matrix-bar">
+                            <div class="matrix-fill" style="width: 88%"></div>
+                        </div>
+                        <div class="matrix-value">88%</div>
+                    </div>
+                  
+                    <div class="matrix-row">
+                        <div class="matrix-label">AI/ML</div>
+                        <div class="matrix-bar">
+                            <div class="matrix-fill" style="width: 80%"></div>
+                        </div>
+                        <div class="matrix-value">80%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Status Dashboard -->
+            <section class="status-dashboard">
+                <h2 class="section-title">LIVE STATUS</h2>
+                
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-icon">💻</div>
+                        <div class="status-label">Currently Working</div>
+                        <div class="status-value" id="currentProject">Building roblox game</div>
+                        <div class="status-indicator active"></div>
+                    </div>
+
+                    <div class="status-card">
+                        <div class="status-icon">📊</div>
+                        <div class="status-label">Lines of Code</div>
+                        <div class="status-value" id="linesOfCode">1,000,000</div>
+                        <div class="status-indicator counting"></div>
+                    </div>
+
+                    <div class="status-card">
+                        <div class="status-icon">⚡</div>
+                        <div class="status-label">System Status</div>
+                        <div class="status-value">All Systems Operational</div>
+                        <div class="status-indicator healthy"></div>
+                    </div>
+
+                    <div class="status-card">
+                        <div class="status-icon">🎯</div>
+                        <div class="status-label">Next Milestone</div>
+                        <div class="status-value" id="nextMilestone">Launch AI Platform</div>
+                        <div class="status-indicator upcoming"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Code Editor -->
+            <section class="code-editor-section">
+                <h2 class="section-title">LIVE CODE EDITOR</h2>
+                
+                <div class="code-editor-container">
+                    <div class="editor-header">
+                        <div class="editor-tabs">
+                            <div class="tab active">app.js</div>
+                            <div class="tab">styles.css</div>
+                            <div class="tab">index.html</div>
+                        </div>
+                        <div class="editor-actions">
+                            <button class="editor-btn">Run</button>
+                            <button class="editor-btn">Save</button>
+                            <button class="editor-btn">Debug</button>
+                        </div>
+                    </div>
+                    
+                    <div class="editor-content">
+                        <pre><code class="code-display">
+// Welcome to my interactive code editor
+// This is a live demonstration of my coding skills
+
+const developerProfile = {
+    name: "Yatin Vanjani",
+    skills: ["JavaScript", "React", "Javascript", "Python"],
+    experience: "3+ years",
+    projects: 50+
+};
+
+function createAwesomeProject() {
+    console.log("🚀 Creating innovative solutions...");
+    return "Project completed successfully!";
+}
+
+// Type faster, code better!
+console.log(createAwesomeProject());
+                        </code></pre>
+                    </div>
+                    
+                    <div class="editor-output">
+                        <div class="output-header">Console Output</div>
+                        <div class="output-content" id="consoleOutput">
+                            <span class="output-line">> Welcome to the development environment</span>
+                            <span class="output-line">> Loading developer profile...</span>
+                            <span class="output-line">> System ready for coding</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology Stack -->
+            <section class="tech-stack-section">
+                <h2 class="section-title">TECHNOLOGY STACK</h2>
+                
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h3>Frontend</h3>
+                        <div class="tech-list">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JAVASCRIPT</span>
+                            <span class="tech-tag">REACT</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h3>Backend</h3>
+                        <div class="tech-list">
+                            <span class="tech-tag">PYTHON</span>
+                            <span class="tech-tag">JAVA</span>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h3>AI/ML</h3>
+                        <div class="tech-list">
+                            <span class="tech-tag">TENSORFLOW</span>
+                            <span class="tech-tag">PYTORCH</span>
+                            <span class="tech-tag">SCIKIT-LEARN</span>
+                            <span class="tech-tag">SCIPY</span>
+                            <span class="tech-tag">PANDAS</span>
+                            <span class="tech-tag">NUMPY</span>
+                            <span class="tech-tag">PLOTLY</span>
+                            <span class="tech-tag">MLFLOW</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h3>Tools & Cloud</h3>
+                        <div class="tech-list">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">GITHUB</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+
+            <!-- Contact Information -->
+            <section class="social-section">
+                <h2 class="section-title">CONNECT</h2>
+                
+                <div class="social-grid">
+                    <a href="https://github.com/yvtinnn" class="social-link" data-platform="github">
+                        <div class="social-icon">🐙</div>
+                        <div class="social-text">github.com/yvtinnn</div>
+                        <div class="social-glow"></div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/yatin-vanjani-2366453a3/" class="social-link" data-platform="linkedin">
+                        <div class="social-icon">💼</div>
+                        <div class="social-text">linkedin.com/in/yatin-vanjani</div>
+                        <div class="social-glow"></div>
+                    </a>
+
+                    <a href="mailto:yatinvanjani7@gmail.com" class="social-link" data-platform="email">
+                        <div class="social-icon">📧</div>
+                        <div class="social-text">yatinvanjani7@gmail.com</div>
+                        <div class="social-glow"></div>
+                    </a>
+
+                    <a href="https://www.instagram.com/y4tinn_/" class="social-link" data-platform="instagram">
+                        <div class="social-icon">📸</div>
+                        <div class="social-text">instagram.com/y4tinn_</div>
+                        <div class="social-glow"></div>
+                    </a>
+
+                    <a href="tel:+918767991777" class="social-link" data-platform="phone">
+                        <div class="social-icon">📞</div>
+                        <div class="social-text"> 8767991777</div>
+                        <div class="social-glow"></div>
+                    </a>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="profile-footer">
+            <div class="footer-text">PHONE: <span class="status-active"></span> 8767991777</span></div>
+            <div class="footer-copyright">© 2026 Yatin Vanjani - 16 year old Programmer</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
